@@ -6,7 +6,7 @@ describe('b-spec', () => {
     })
 
     it('has h2', () => {
-      cy.contains('h2', 'hello world')
+      cy.contains('h2', 'Hello world')
     })
   })
 })
