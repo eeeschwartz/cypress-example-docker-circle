@@ -2,11 +2,11 @@ describe('b-spec', () => {
   describe('page', () => {
     beforeEach(() => {
       debugger
-      cy.visit(Cypress.env('HOST') || 'index.html')
+      cy.visit(Cypress.env('HOST') || '/')
     })
 
     it('has h2', () => {
-      cy.contains('h2', 'test')
+      cy.contains('h2', 'hello world')
     })
   })
 })
