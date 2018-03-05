@@ -1,7 +1,7 @@
 describe('a-spec', () => {
   describe('page', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:8081')
+      cy.visit(Cypress.env('HOST') || '/')
     })
 
     it('has h2', () => {
